@@ -11,6 +11,6 @@ class JsonEncodeDemo1 {
       obj.put("balance", new Double(1000.21));
       obj.put("is_vip", new Boolean(true));
 
-      System.out.print(obj);
+      System.out.println(obj);
    }
 }
