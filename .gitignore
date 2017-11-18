@@ -1,1 +1,7 @@
+# Java Files
 *.class
+
+# Build Files
+git-script.*
+
+

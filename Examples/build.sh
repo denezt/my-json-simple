@@ -1,6 +1,6 @@
 #!/bin/bash
 
-progname=( 'JsonEncodeDemo1' )
+progname=( 'JsonEncodeDemo1' 'JsonEncodeDemo2' )
 
 for p in ${progname[*]}
 do
