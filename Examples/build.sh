@@ -1,9 +1,21 @@
-#!/bin/bash
+#!/bin/bash -x
 
-progname=( 'JsonEncodeDemo1' 'JsonEncodeDemo2' )
+# 'JsonEncodeDemo1' 'JsonEncodeDemo2' 'JsonEncodeDemo3'
+srcname=( `ls JsonEncodeDemo*.class JsonDecodeDemo*.class` )
+progname=( `ls JsonEncodeDemo*.java JsonDecodeDemo*.java` )
 
-for p in ${progname[*]}
-do
-	printf "\033[35mCompiling:\033[0m \033[36m${p}.java\033[0m\n"
-	javac ${p}.java
-done
+clean(){
+	for p in ${progname[*]}
+	do
+		printf "\033[35mCompiling:\033[0m \033[36m${p}\033[0m\n"
+		javac ${p}
+	done
+	}
+
+compile(){
+	for p in ${progname[*]}
+	do
+		printf "\033[35mCompiling:\033[0m \033[36m${p}\033[0m\n"
+		javac ${p}
+	done
+	}
